@@ -1,0 +1,44 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure children are centered */
+  justify-content: center;
+  background: #1e1e1e; /* Darker container */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(187, 134, 252, 0.2); /* Purple glow */
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-button {
+  background: #bb86fc;
+  color: #121212;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  width: 100%; /* Make button take full width */
+  text-align: center; /* Center text */
+}
+
+.login-button:hover {
+  background: #d0a8ff;
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}

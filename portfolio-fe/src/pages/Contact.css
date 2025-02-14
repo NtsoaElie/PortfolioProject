@@ -1,0 +1,121 @@
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a; /* Black background */
+    padding: 20px;
+  }
+  
+  .contact-content {
+    background: #1a1a2e; /* Dark purple */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 0, 255, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #e0e0e0; /* Light gray */
+    margin-bottom: 10px;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background: #121212;
+    border: 1px solid linear-gradient(135deg, #7c3aed, #a78bfa);;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: none;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa); /* Purple gradient */
+
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #a78bfa, #d8b4fe); /* Lighter gradient on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.5);
+  }
+
+  .success-message {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .go-home-button {
+    background-color: #8a2be2; /* Purple background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed; /* Keeps it fixed at top-left corner */
+    top: 20px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+    z-index: 999; /* Ensures it's always on top of other elements */
+    transition: background-color 0.3s;
+  }
+  
+  .go-home-button:hover {
+    background-color: #6a1b9a; /* Darker purple for hover effect */
+  }
+  
+  .go-home-button:focus {
+    outline: none;
+  }
+
+  
+  
+  
+  
+  

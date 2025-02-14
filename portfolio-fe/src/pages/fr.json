@@ -1,0 +1,77 @@
+{
+  "about_me": "À propos de moi",
+  "header_subtitle": "Apprenez-en davantage sur qui je suis et mon parcours.",
+  "go_back_home": "Retour à l'accueil",
+  "who_i_am": "Qui je suis",
+  "intro_text": "Je suis un développeur passionné par la création d'applications à fort impact. J'aime la technologie et résoudre des problèmes, toujours à la recherche d'apprendre et de progresser.",
+  "journey_text": "Mon parcours en développement logiciel a commencé en 2022, et depuis, j'ai acquis de l'expérience dans divers domaines tels que le développement mobile, le développement web full-stack et bien plus encore.",
+  "download_cv": "Télécharger Mon CV",
+  "my_journey": "Mon Parcours",
+  "present": "Présent",
+  "internship_at_ccl": "Stage chez CCL",
+  "internship_description": "Développement de fonctionnalités pour une application en React.js et C#.",
+  "mobile_dev_legacy": "Développement mobile & Contribution à un projet d de 3 ans",
+  "mobile_dev_description": "Travail sur le développement d'applications mobiles avec Swift & Kotlin. Contribution à Champlain Pet Clinic avec React.js et Spring Boot.",
+  "full_stack_dev": "Développement Web Full-Stack",
+  "full_stack_description": "Plongée dans le développement web full-stack, en utilisant HTML, CSS, JavaScript, React.js, et Spring Boot.",
+  "started_java_web": "Début de l'apprentissage de Java & du développement Web",
+  "started_java_web_description": "J'ai commencé mon parcours en programmation avec Java, HTML et CSS. J'ai créé mes premiers projets.",
+  "footer_text": "© Ntsoa Elie Ramampiarison. Tous droits réservés.",
+
+  
+    "hello": "Bonjour, je suis Ntsoa Elie Ramampiarison",
+    "subtitle": "Un développeur passionné | Designer | Enthousiaste de la technologie",
+    "about_me": "À propos de moi",
+    "about_text": "Découvrez mon parcours et mes compétences.",
+    "projects": "Projets",
+    "projects_text": "Découvrez certains de mes travaux et collaborations.",
+    "contact": "Contact",
+    "contact_text": "Contactez-moi pour des opportunités ou des demandes.",
+    "admin_dashboard": "Accéder au tableau de bord administrateur",
+    "logout": "Se déconnecter",
+    "login": "Se connecter",
+    "comments": "Commentaires",
+    "write_comment": "Écrivez un commentaire...",
+    "post_comment": "Publier",
+    "login_to_comment": "Veuillez vous connecter pour publier un commentaire.",
+    "comment_avatar": "Avatar de l'utilisateur",
+    "comment_user": "Utilisateur",
+    "comment_time": "• À l'instant",
+    "comment_text": "Texte du commentaire",
+    "footer": "© {year} Ntsoa Elie Ramampiarison. Tous droits réservés.",
+
+    
+      "go_back_home": "Retour à l'accueil",
+      "contact_me": "Contactez-moi",
+      "inquiries_collaborations": "N'hésitez pas à me contacter pour toute demande ou collaboration !",
+      "name": "Nom",
+      "your_name": "Votre Nom",
+      "message": "Message",
+      "your_message": "Votre Message",
+      "send_message": "Envoyer le Message",
+      "message_sent": "✅ Message envoyé avec succès !",
+      "message_failed": "❌ Échec de l'envoi du message.",
+
+
+      "dashboard": "Tableau de Bord",
+      "manage_project": "Gestion de Projets",
+
+      "approve": "Approuver",
+      "reject": "Rejeter",
+      "add_project": "Ajouter un projet",
+      "view_project": "Visiter le projet",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "approval_status": "Status D'approbation:",
+      "manage_comments": "Gérer les commentaires",
+      "approved_message": "✅ Approuver",
+      "pending_message": "⏳ En attente",
+
+      "project_title": "Mes Projets",
+      "project_message": "Voici des projets majeurs sur lesquels j'ai travaillé"
+    
+    
+    
+  
+  
+}

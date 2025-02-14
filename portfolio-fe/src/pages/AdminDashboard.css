@@ -1,0 +1,85 @@
+/* AdminDashboard.css */
+body {
+    background-color: #0b0b0b;
+    color: #c5b3f0;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-dashboard {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    background: #121212;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(144, 0, 255, 0.4);
+}
+
+h2 {
+    color: #b886ff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    color: #e0aaff;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+button {
+    background: linear-gradient(135deg, #6a0dad, #45006e);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+    box-shadow: 0px 4px 12px rgba(144, 0, 255, 0.5);
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #45006e, #6a0dad);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 15px rgba(144, 0, 255, 0.7);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #19132b;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(144, 0, 255, 0.4);
+}
+
+a {
+    color: #b886ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e0aaff;
+}
+
+.comment-actions, .project-actions {
+    margin-top: 12px;
+}
+
+.comment-actions button,
+.project-actions button {
+    margin-right: 12px;
+}

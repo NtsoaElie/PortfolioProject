@@ -1,0 +1,387 @@
+/* Background and layout */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, #4b0082, black);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+    max-width: 64rem; /* max-w-4xl */
+  }
+  
+  /* Header styles */
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d8b4fe; /* Purple-300 */
+    margin-bottom: 1rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.25rem;
+    color: #a78bfa; /* Purple-400 */
+  }
+  
+  /* Grid section */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: #5b21b6; /* Purple-800 */
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  /* Remove default underline and focus styles on Links */
+.card a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures the text color of the link inherits from its parent */
+}
+
+.card a:focus,
+.card a:hover {
+  outline: none; /* Removes any focus outline or styling that may be added by the browser */
+}
+
+
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px #7c3aed; /* Purple-700 */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d8b4fe; /* Purple-300 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    color: #a78bfa; /* Purple-400 */
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 3rem;
+    color: #a3a3a3; /* Purple-500 */
+    font-size: 0.875rem; /* text-sm */
+  }
+
+/* Comment Section */
+.comment-section {
+  margin-top: 2rem;
+  background-color: #3a0d82; /* Darker purple */
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: #d8b4fe;
+  font-family: 'Arial', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.comment-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #d8b4fe;
+  text-align: center;
+}
+
+/* Comment Form */
+.comment-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #7c3aed;
+  border-radius: 1rem;
+  background-color: #311b92;
+  color: #d8b4fe;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comment-input:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 8px rgba(157, 78, 221, 0.8);
+}
+
+.comment-button {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(to right, #7c3aed, #9d4edd);
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comment-button:hover {
+  background: #9d4edd;
+  transform: translateY(-2px);
+}
+
+.comment-button:active {
+  transform: scale(0.98);
+}
+
+/* Comments List */
+.comments-list {
+  margin-top: 1.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Individual Comment */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #4c1d95;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comment:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar */
+.comment-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #d8b4fe;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Comment Content */
+.comment-content {
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-user {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.comment-time {
+  font-size: 0.85rem;
+  color: #b29cc8;
+}
+
+.comment-text {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #d8b4fe;
+  word-wrap: break-word;
+}
+
+/* Scrollbar Styling */
+.comments-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 5px;
+}
+
+.comments-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*Log out button Styling */
+.logout-button {
+  background: #bb86fc;
+  color: #121212;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background: #d0a8ff;
+}
+
+.logout-button:active {
+  transform: scale(0.95);
+}
+
+/* General Layout */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, black, #4b0082, black);
+  padding: 1rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 64rem;
+  position: relative; /* Allows absolute positioning inside */
+}
+
+/* Header Styles */
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d8b4fe;
+  margin-bottom: 1rem;
+}
+
+.header-subtitle {
+  font-size: 1.25rem;
+  color: #a78bfa;
+}
+
+/* Auth and Language Section */
+.auth-and-language {
+  position: absolute;
+  top: -1rem;
+  right: -7rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-button,
+.logout-button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: #9d4edd;
+}
+
+.language-switcher button {
+  background: none;
+  border: 1px solid #d8b4fe;
+  color: #d8b4fe;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #7c3aed;
+}
+
+/* User Avatar */
+.user-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #d8b4fe;
+  border: 2px solid #7c3aed;
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 2rem;
+  background-color: #3a0d82;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: #d8b4fe;
+  font-family: 'Arial', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.comment-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #d8b4fe;
+  text-align: center;
+}
+
+/* For smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .auth-and-language {
+    top: -1rem;  /* Adjusted top position */
+    right: -2rem;  /* Adjusted right position */
+  }
+}
+
+/* For medium-sized screens (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .auth-and-language {
+    top: -0.5rem;  /* Slightly adjusted top position */
+    right: 1rem;  /* Slightly adjusted right position */
+  }
+}
+
+/* For larger screens (e.g., desktops) */
+@media (min-width: 1025px) {
+  .auth-and-language {
+    top: -1rem;  /* Adjusted top position */
+    right: -7rem;  /* Adjusted right position */
+  }
+}
+
+

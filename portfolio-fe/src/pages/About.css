@@ -1,0 +1,217 @@
+/* General page layout */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, black, #4b0082, black);
+  text-align: center;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 64rem; /* max-w-4xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Header styles */
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d8b4fe; /* Purple-300 */
+  margin-bottom: 1rem;
+}
+
+.header-subtitle {
+  font-size: 1.25rem;
+  color: #a78bfa; /* Purple-400 */
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+  color: #a78bfa; /* Purple-400 */
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d8b4fe; /* Purple-300 */
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .about-section .about-image {
+    flex: 1;
+  }
+
+  .about-section .about-content {
+    flex: 2;
+  }
+}
+
+/* About image styles */
+.about-image img {
+  width: 100%;
+  max-width: 18rem; /* Keep image size controlled */
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Smooth transition for the shape */
+}
+
+/* Bubble effect for smaller screens */
+@media (max-width: 768px) {
+  .about-image img {
+    max-width: 10rem; /* Make the image smaller on mobile */
+    border-radius: 50%; /* Make it a circle (bubble) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for bubble effect */
+    width: 70%; /* Ensure it scales down with the screen */
+  }
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 3rem;
+  color: #a3a3a3; /* Purple-500 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+/* Timeline Section */
+.timeline-section {
+  width: 100%;
+  max-width: 64rem; /* max-w-4xl */
+  margin-top: 2rem;
+  text-align: left;
+  color: #a78bfa; /* Purple-400 */
+}
+
+.timeline-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d8b4fe; /* Purple-300 */
+  margin-bottom: 1.5rem;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-left: 2rem;
+  border-left: 4px solid #7c3aed; /* Purple-700 for timeline line */
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -3.5rem;
+  top: 0;
+  background-color: #7c3aed;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.timeline-content {
+  padding-left: 2rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  color: #d8b4fe;
+}
+
+.timeline-content p {
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+    margin-left: 1rem;
+  }
+
+  .timeline-date {
+    left: -2rem;
+    font-size: 0.9rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa); /* Purple gradient */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3); /* Purple shadow */
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, #a78bfa, #d8b4fe); /* Lighter gradient on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.5);
+}
+
+.go-home-button {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa); /* Purple gradient */
+
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed; /* Keeps it fixed at top-left corner */
+  top: 20px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
+  z-index: 999; /* Ensures it's always on top of other elements */
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3); /* Purple shadow */
+}
+
+.go-home-button:hover {
+  background: linear-gradient(135deg, #a78bfa, #d8b4fe); /* Lighter gradient on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.5);
+}
+
+.go-home-button:focus {
+  outline: none;
+}
+
+
+

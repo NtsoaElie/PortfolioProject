@@ -13,6 +13,10 @@ RUN npm run build
 
 # Use Nginx to serve the built frontend
 FROM nginx:latest
+
+# Install netcat for health checks
+RUN apt-get update && apt-get install -y netcat
+
 COPY --from=build /app/build /usr/share/nginx/html
 
 # Expose the port

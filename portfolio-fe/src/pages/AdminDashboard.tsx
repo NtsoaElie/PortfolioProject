@@ -51,7 +51,7 @@ const AdminDashboard = () => {
   // Fetch all projects
   const getAllProjects = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:8080/api/v1/projects`, {
+      const response = await fetch(`http://178.128.227.59:8080/api/v1/projects`, {
         headers: { Accept: "application/json" },
         credentials: "include",
       });
@@ -89,7 +89,7 @@ const AdminDashboard = () => {
   // Handle Add, Edit, and Delete for Projects
   const handleAddProject = async (project: ProjectModel) => {
     try {
-      const response = await fetch("http://localhost:8080/api/v1/projects", {
+      const response = await fetch("http://178.128.227.59:8080/api/v1/projects", {
         method: "POST",
         headers: { Accept: "application/json", "Content-Type": "application/json" },
         credentials: "include",
@@ -107,7 +107,7 @@ const AdminDashboard = () => {
     if (!updatedProject.projectId) return;
     try {
       const response = await fetch(
-        `http://localhost:8080/api/v1/projects/${updatedProject.projectId}`,
+        `http://178.128.227.59:8080/api/v1/projects/${updatedProject.projectId}`,
         {
           method: "PUT",
           headers: {
@@ -131,7 +131,7 @@ const AdminDashboard = () => {
   const handleDeleteProject = async (projectId: string) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/v1/projects/${projectId}`,
+        `http://178.128.227.59:8080/api/v1/projects/${projectId}`,
         {
           method: "DELETE",
           credentials: "include",

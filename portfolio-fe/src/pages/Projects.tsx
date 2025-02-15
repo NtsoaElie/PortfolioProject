@@ -23,7 +23,7 @@ const Projects = () => {
 
   const getAllProjects = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:8080/api/v1/projects`, {
+      const response = await fetch(`http://178.128.227.59:8080/api/v1/projects`, {
         headers: {
           Accept: "application/json",
         },

@@ -384,4 +384,29 @@
   }
 }
 
+.delete-button {
+  background: linear-gradient(to right, #dc2626, #ef4444); /* Red-600 to Red-500 */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4); /* Soft red shadow */
+}
+
+.delete-button:hover {
+  background: #ef4444; /* Red-500 */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.5);
+}
+
+.delete-button:active {
+  transform: scale(0.96);
+}
+
+
+
 
